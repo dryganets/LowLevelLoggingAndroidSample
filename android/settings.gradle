@@ -1,4 +1,4 @@
-rootProject.name = 'LowLevelLoggingAndroidSample'
+rootProject.name = 'ReactNativePRSandbox'
 
 include ':app'
 include ':ReactAndroid'

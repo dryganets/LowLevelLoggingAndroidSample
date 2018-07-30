@@ -1,4 +1,4 @@
-package com.lowlevelloggingandroidsample;
+package com.reactnative.sandbox;
 
 import android.app.Application;
 
