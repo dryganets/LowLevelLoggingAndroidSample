@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "react": "16.4.1",
-    "react-native": "git://github.com/dryganets/react-native.git#f17b494"
+    "react-native": "git://github.com/dryganets/react-native.git#f0f7e4f054"
   },
   "devDependencies": {
     "babel-jest": "23.4.2",
