@@ -10,6 +10,6 @@
   },
   "dependencies": {
     "react": "16.4.1",
-    "react-native": "git://github.com/dryganets/react-native.git#f17b494"
+    "react-native": "git://github.com/dryganets/react-native.git#370bcffba7"
   }
 }
