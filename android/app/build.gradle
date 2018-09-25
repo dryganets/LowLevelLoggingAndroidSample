@@ -94,8 +94,8 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion rootProject.ext.projectCompileSdkVersion
+    buildToolsVersion rootProject.ext.projectBuildToolsVersion
 
     defaultConfig {
         applicationId "com.reactnative.sandbox"
