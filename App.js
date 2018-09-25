@@ -1,29 +1,41 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import React from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+const Tag = 'WS';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+export default class App extends React.Component {
+  id = 1;
+  constructor(props) {
+    super(props);
+    this.state = { connected: false };
+    window.navigator.userAgent = 'react-native';
+  }
 
-type Props = {};
-export default class App extends Component<Props> {
+  _connectSocket = () => {
+    this.ws = new WebSocket('ws://104.236.168.186:3000', void 0, { pingInterval: 10000 });
+    this.ws.onerror = (e) => {
+      console.log(Tag, 'Error', e.message);
+    };
+
+    this.ws.onopen = (ws, event) => {
+      console.log(Tag, "Socket open");
+      setInterval(() => {
+        this.ws.send('' + this.id);
+      }, 1000);
+    };
+
+    this.ws.onclose = () => {
+      console.log(Tag, "Socket closed");
+    };
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text>Open up App.js to start working on your app!</Text>
+        <Button 
+          title = 'Connect'
+          onPress = { this._connectSocket } />
       </View>
     );
   }
@@ -32,18 +44,8 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    backgroundColor: '#fff',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    justifyContent: 'center',
   },
 });

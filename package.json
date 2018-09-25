@@ -5,20 +5,10 @@
   "scripts": {
     "run-android": "node node_modules/react-native/local-cli/cli.js run-android",
     "run-ios": "node node_modules/react-native/local-cli/cli.js run-ios",
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
     "react": "16.4.1",
-    "react-native": "git://github.com/dryganets/react-native.git#f17b494"
-  },
-  "devDependencies": {
-    "babel-jest": "23.4.2",
-    "babel-preset-react-native": "^5",
-    "jest": "23.4.2",
-    "react-test-renderer": "16.4.1"
-  },
-  "jest": {
-    "preset": "react-native"
+    "react-native": "git://github.com/dryganets/react-native.git#e47ff4937f"
   }
 }
