@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "react": "16.4.1",
-    "react-native": "git://github.com/dryganets/react-native.git#370bcffba7"
+    "react-native": "git://github.com/dryganets/react-native.git#370bcffba7",
+    "react-native-linear-gradient": "git+https://skype.visualstudio.com/DefaultCollection/TPS/_git/react-native-linear-gradient#9e16bbf"
   }
 }

@@ -3161,6 +3161,10 @@ react-devtools-core@3.1.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
+"react-native-linear-gradient@git+https://skype.visualstudio.com/DefaultCollection/TPS/_git/react-native-linear-gradient#9e16bbf":
+  version "2.0.0"
+  resolved "git+https://skype.visualstudio.com/DefaultCollection/TPS/_git/react-native-linear-gradient#9e16bbf1493668d1908f262fe45f90aadd0c2075"
+
 "react-native@git://github.com/dryganets/react-native.git#370bcffba7":
   version "0.55.4"
   resolved "git://github.com/dryganets/react-native.git#370bcffba748e895ad8afa825bfef40bff859c95"
