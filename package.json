@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.4.1",
-    "react-native": "git://github.com/dryganets/react-native.git#370bcffba7"
+    "react": "16.3.1",
+    "react-native": "git+https://skype.visualstudio.com/TPS/_git/react-native#ccf500c463"
   }
 }
