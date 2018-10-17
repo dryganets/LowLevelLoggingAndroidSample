@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.4.1",
-    "react-native": "git://github.com/dryganets/react-native.git#f17b494"
+    "react": "16.0.0-alpha.12",
+    "react-native": "git://github.com/dryganets/react-native.git#1e2a924ba6"
   }
 }
