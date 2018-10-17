@@ -2545,9 +2545,9 @@ react-devtools-core@2.3.1:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-"react-native@git://github.com/dryganets/react-native.git#1e2a924ba6":
+"react-native@git://github.com/dryganets/react-native.git#f0fa16e2a1":
   version "0.46.4"
-  resolved "git://github.com/dryganets/react-native.git#1e2a924ba60001c6f0587c7561536f00b2922cbf"
+  resolved "git://github.com/dryganets/react-native.git#f0fa16e2a1bcc2614c4ab3a73146fe68eff54a56"
   dependencies:
     absolute-path "^0.0.0"
     art "^0.10.0"
