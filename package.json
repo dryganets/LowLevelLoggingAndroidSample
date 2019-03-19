@@ -8,7 +8,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
-    "react": "16.4.1",
-    "react-native": "git://github.com/dryganets/react-native.git#e47ff4937f"
+    "react": "16.8.3",
+    "react-native": "git://github.com/dryganets/react-native.git#649ded898a"
   }
 }

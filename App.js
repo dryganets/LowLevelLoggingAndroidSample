@@ -20,13 +20,19 @@ export default class App extends React.Component {
     this.ws.onopen = (ws, event) => {
       console.log(Tag, "Socket open");
       setInterval(() => {
-        this.ws.send('' + this.id);
+        const msg = '' + this.id++;
+        console.log(Tag, "Sending: " + msg);
+        this.ws.send(msg);
       }, 1000);
     };
 
     this.ws.onclose = () => {
       console.log(Tag, "Socket closed");
     };
+    
+    this.ws.onmessage = (message) => {
+      console.log(Tag, "arrived");
+    }
   }
 
   render() {
